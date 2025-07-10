@@ -21,10 +21,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final String icon = getFestivalIcon();
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final String icon = getFestivalIcon();
+
     return MaterialApp(
       title: 'Festival App',
       home: Scaffold(
