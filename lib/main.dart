@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
                 style: TextStyle(fontSize: 18),
               ),
               SizedBox(height: 20),
-              Image.asset(icon, height: 500, width: 500),
+              Flexible(child: Image.asset(icon, fit: BoxFit.contain)),
             ],
           ),
         ),
